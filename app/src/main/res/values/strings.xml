@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BarberAppSecProject</string>
+    <string name="welcome">Welcome to Modern Barber, Let\'s Change</string>
+    <string name="info">Product By:</string>
+    <string name="info2">B35 Developer Team</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_book">Book Appointment</string>
+    <string name="menu_service">Our Service</string>
+    <string name="menu_showcase">Showcase</string>
+    <string name="menu_offers">Offers</string>
+    <string name="menu_homecare_products">Home Care Products</string>
+    <string name="menu_location">How to Reach</string>
+    <string name="menu_hours">Working Hours</string>
+    <string name="menu_reviews">User Reviews</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_login">Sign up/Sign in</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="tv_label_title">Modern Salon</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="foreget">Forget Password</string>
+    <string name="skip">Skip</string>
+    <string name="have_no_account">Have No Account? Sign Up</string>
+    <string name="have_account">Have Account? Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="menu_my_app">My Appointments</string>
+    <string name="explore">Explore More</string>
+    <string name="hour">Now Open 9:00AM--9:00PM</string>
+    <string name="book">Book A Appointment Now</string>
+    <string name="service">Our Services</string>
+    <string name="about">About Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

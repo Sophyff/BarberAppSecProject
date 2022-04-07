@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_home"
+            android:id="@+id/action_home"
+            android:title="@string/menu_home" />
+        <item
+            android:icon="@drawable/ic_book_appointment"
+            android:id="@+id/action_book"
+            android:title="@string/menu_book" />
+        <item
+            android:icon="@drawable/ic_services"
+            android:id="@+id/action_service"
+            android:title="@string/menu_service" />
+        <item
+            android:icon="@drawable/ic_showcase"
+            android:id="@+id/action_showcase"
+            android:title="@string/menu_showcase" />
+        <item
+            android:icon="@drawable/ic_discount"
+            android:id="@+id/action_offers"
+            android:title="@string/menu_offers" />
+        <item
+            android:icon="@drawable/ic_homecare"
+            android:id="@+id/action_homecare_products"
+            android:title="@string/menu_homecare_products" />
+        <item
+            android:icon="@drawable/ic_location"
+            android:id="@+id/action_location"
+            android:title="@string/menu_location" />
+
+        <item
+            android:icon="@drawable/ic_workhour"
+            android:id="@+id/action_hours"
+            android:title="@string/menu_hours" />
+        <item
+            android:icon="@drawable/ic_reviews"
+            android:id="@+id/action_reviews"
+            android:title="@string/menu_reviews" />
+
+        <item
+            android:icon="@drawable/ic_login"
+            android:id="@+id/action_login"
+            android:title="@string/menu_login" />
+    </group>
+
+</menu>
