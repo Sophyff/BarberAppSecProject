@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.barberappsecproject.databinding.FragmentSelectBarberBinding
 import com.example.barberappsecproject.ui.book.BookViewModel
-import com.example.barberappsecproject.ui.book.adapter.SelectBarberAdapter
+import com.example.barberappsecproject.ui.adapter.SelectBarberAdapter
 
 class SelectBarberFragment : Fragment() {
     lateinit var binding: FragmentSelectBarberBinding

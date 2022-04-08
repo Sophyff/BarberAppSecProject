@@ -1,4 +1,4 @@
-package com.example.barberappsecproject.ui.book.adapter
+package com.example.barberappsecproject.ui.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

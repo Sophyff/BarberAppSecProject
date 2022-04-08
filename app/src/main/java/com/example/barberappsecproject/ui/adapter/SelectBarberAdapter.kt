@@ -1,11 +1,11 @@
-package com.example.barberappsecproject.ui.book.adapter
+package com.example.barberappsecproject.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.barberappsecproject.databinding.ViewHolderBarberBinding
 import com.example.barberappsecproject.model.remote.response.Barber
-import com.example.barberappsecproject.ui.book.viewholder.BarberViewHolder
+import com.example.barberappsecproject.ui.viewholder.BarberViewHolder
 
 class SelectBarberAdapter(val list:List<Barber>):RecyclerView.Adapter<BarberViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BarberViewHolder {

@@ -1,4 +1,4 @@
-package com.example.barberappsecproject.ui.book.viewholder
+package com.example.barberappsecproject.ui.viewholder
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.barberappsecproject.databinding.ViewHolderBarberBinding

@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.barberappsecproject.databinding.ActivityBookAppointmentBinding
 import com.example.barberappsecproject.model.remote.ApiService
 import com.example.barberappsecproject.model.remote.Repository
-import com.example.barberappsecproject.ui.book.adapter.BookAppointmentViewPagerAdapter
+import com.example.barberappsecproject.ui.adapter.BookAppointmentViewPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 
 class BookAppointmentActivity : AppCompatActivity() {

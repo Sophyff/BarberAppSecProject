@@ -1,6 +1,6 @@
 package com.example.barberappsecproject.model.remote.data
 
-data class ServiceCategory(var name:String, var img:String)
+data class ServiceCategory(var name:String, var img:String, val id:String)
 
 /*****
 {

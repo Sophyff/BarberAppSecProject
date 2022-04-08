@@ -43,6 +43,7 @@ class DashboardActivity : AppCompatActivity() {
             handleNavigationOperation(it)
             true
         }
+        setEventClickListener()
 
     }
 
@@ -131,5 +132,12 @@ class DashboardActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-
+    private fun setEventClickListener(){
+        binding.tvItemBook.setOnClickListener {
+            startActivity(Intent(this, BookAppointmentActivity::class.java))
+        }
+        binding.tvItemService.setOnClickListener {
+            startActivity(Intent(this, OurServicesActivity::class.java))
+        }
+    }
 }

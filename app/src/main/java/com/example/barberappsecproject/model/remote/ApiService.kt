@@ -26,8 +26,8 @@ interface ApiService {
     ): Observable<Response>
 
     @GET("Barber/getBarbers")
+    @Headers("ps_auth_token: hBkclZtTdXR2sEvm5DgSC0Ia6OjpYLx1")
     fun getBarbers(
-
     ): Observable<getBarberResponse>
 
     @GET("Service/getServices")
