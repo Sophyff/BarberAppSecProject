@@ -13,9 +13,6 @@
         android:theme="@style/Theme.BarberAppSecProject"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ui.services.ServiceDetailActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.services.OurServicesActivity"
             android:exported="false" />
         <activity

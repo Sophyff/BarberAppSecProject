@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
             val pref = getSharedPreferences("User", MODE_PRIVATE)
 
-            if(pref.contains("name")) {
+            if(pref.contains("user_id")) {
                 handler.sendEmptyMessageDelayed(MESSAGE_GOTO_DASHBOARD, 5000)
             } else {
                 handler.sendEmptyMessageDelayed(MESSAGE_GOTO_LOGIN, 5000)

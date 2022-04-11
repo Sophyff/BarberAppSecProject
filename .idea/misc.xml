@@ -16,15 +16,17 @@
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_service_detail.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_select_barber.xml" value="0.1787479406919275" />
+        <entry key="app/src/main/res/layout/fragment_select_service.xml" value="0.1" />
         <entry key="app/src/main/res/layout/layout_profile.xml" value="0.10416666666666667" />
         <entry key="app/src/main/res/layout/service_detail_fragment.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/view_holder_barber.xml" value="0.1787479406919275" />
+        <entry key="app/src/main/res/layout/view_holder_barber.xml" value="0.1" />
         <entry key="app/src/main/res/layout/view_holder_service_category.xml" value="0.10172981878088962" />
         <entry key="app/src/main/res/layout/view_holder_service_detail.xml" value="0.1" />
         <entry key="app/src/main/res/menu/main_nav_menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/main_signed_menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/main_unsigned_menu.xml" value="0.1" />
-        <entry key="app/src/main/res/menu/search_menu.xml" value="0.12864583333333332" />
+        <entry key="app/src/main/res/menu/notification_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/search_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

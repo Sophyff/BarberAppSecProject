@@ -39,7 +39,7 @@ class ServiceDetailFragment : Fragment() {
     private fun initObserver() {
         viewModel.services.observe(requireActivity()) {
 
-            val list = it.Haircuts as List<ServiceDetail>
+            val list = it.Haircuts.map {  ServiceDetail(it.cost,it.duration,it.serviceId,it.serviceName,it.servicePic) }
             adapter = ServiceDetailAdapter(list)
             binding.rvServiceDetail.adapter = adapter
 

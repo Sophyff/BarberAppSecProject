@@ -2,11 +2,11 @@ package com.example.barberappsecproject.model.remote
 
 import com.example.barberappsecproject.model.remote.data.Login
 import com.example.barberappsecproject.model.remote.data.Signup
-import com.example.barberappsecproject.model.remote.response.LoginResponse
-import com.example.barberappsecproject.model.remote.response.Response
-import com.example.barberappsecproject.model.remote.response.getBarberResponse
-import com.example.barberappsecproject.model.remote.response.getServicesResponse
+import com.example.barberappsecproject.model.remote.response.*
+
 import io.reactivex.*
+import retrofit2.Call
+import retrofit2.Response
 import retrofit2.create
 import retrofit2.http.*
 
@@ -23,12 +23,27 @@ interface ApiService {
     @Headers("Content-type: application/json")
     fun signup(
         @Body signup: Signup
-    ): Observable<Response>
+    ): Observable<ResponseInfo>
 
     @GET("Barber/getBarbers")
-    @Headers("ps_auth_token: hBkclZtTdXR2sEvm5DgSC0Ia6OjpYLx1")
-    fun getBarbers(
-    ): Observable<getBarberResponse>
+    suspend fun getBarbers(
+        @Header("ps_auth_token") apiToken:String
+    ): Response<getBarberResponse>
+
+
+    @POST("BarberServices/getBarberServices")
+    suspend fun getBarberServices(
+        @Header("ps_auth_token") apiToken:String,
+        @Query("barberId") barberId:String,
+        @Query("hasDefaultServices") default:String="1"
+    ): Response<getServicesResponse>
+
+    @GET("Appointment/currentAppointments/{barberId}")
+    suspend fun getTimeSlot(
+        @Header("ps_auth_token") apiToken:String,
+        @Path("barberId") barberId:String
+    ): Response<getTimeSlotResponse>
+
 
     @GET("Service/getServices")
     fun getServices(

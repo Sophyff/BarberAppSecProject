@@ -63,6 +63,7 @@ class LoginActivity : AppCompatActivity() {
             editor.putString("name", it.fullName)
             editor.putString("mobile_no", it.mobileNo)
             editor.putString("user_id",it.userId)
+            editor.putString("apiToken",it.apiToken)
             editor.commit()
 
             startActivity(Intent(baseContext, DashboardActivity::class.java))

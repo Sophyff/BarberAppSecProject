@@ -110,25 +110,9 @@ class DashboardActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
-        inflater.inflate(R.menu.search_menu, menu)
-        val searchViewItem: MenuItem = menu.findItem(R.id.app_bar_search)
-        val searchView: SearchView = MenuItemCompat.getActionView(searchViewItem) as SearchView
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                searchView.clearFocus()
-                //todo
-                /*   if(list.contains(query)){
-                    adapter.getFilter().filter(query);
-                }else{
-                    Toast.makeText(MainActivity.this, "No Match found",Toast.LENGTH_LONG).show();
-                }*/return false
-            }
+        inflater.inflate(R.menu.notification_menu, menu)
 
-            override fun onQueryTextChange(newText: String?): Boolean {
-                // adapter.getFilter().filter(newText)
-                return false
-            }
-        })
+        //todo notification option menu
         return super.onCreateOptionsMenu(menu)
     }
 

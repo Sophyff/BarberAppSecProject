@@ -2,6 +2,7 @@ package com.example.barberappsecproject.ui.book
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import com.example.barberappsecproject.databinding.ActivityBookAppointmentBinding
 import com.example.barberappsecproject.model.remote.ApiService
@@ -33,11 +34,23 @@ class BookAppointmentActivity : AppCompatActivity() {
         }.attach()
 
         initViewModel()
+        initEvent()
     }
 
     private fun initViewModel(){
         val repository= Repository(ApiService.getInstance())
         val factory= BookViewModelFactory(repository)
         viewModel= ViewModelProvider(this, factory)[BookViewModel::class.java]
+    }
+
+    private fun initEvent(){
+        val pref=getSharedPreferences("User", MODE_PRIVATE)
+        val userId=pref.getString("user_id","")
+        val apiToken=pref.getString("apiToken","")
+        Log.d("tag","the user inof is userId:$userId, apiToken is $apiToken" )
+        if(userId!=""){
+            viewModel.userId.postValue(userId)
+            viewModel.apiToken.postValue(apiToken)
+        }
     }
 }

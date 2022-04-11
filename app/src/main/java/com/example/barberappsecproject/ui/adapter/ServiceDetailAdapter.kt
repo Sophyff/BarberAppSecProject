@@ -10,18 +10,19 @@ import com.example.barberappsecproject.model.remote.response.Barber
 import com.example.barberappsecproject.ui.viewholder.BarberViewHolder
 import com.example.barberappsecproject.ui.viewholder.ServiceDetailViewHolder
 
-class ServiceDetailAdapter(val list:List<ServiceDetail>):RecyclerView.Adapter<ServiceDetailViewHolder>() {
+class ServiceDetailAdapter(val list:List<Any>):RecyclerView.Adapter<ServiceDetailViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ServiceDetailViewHolder {
         val binding=ViewHolderServiceDetailBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ServiceDetailViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ServiceDetailViewHolder, position: Int) {
-        holder.bind(list[position])
+        val serviceDetail=list[position] as ServiceDetail
+        holder.bind(serviceDetail)
 
         holder.itemView.setOnClickListener {
             if(this::itemSelectedListener.isInitialized){
-                itemSelectedListener(list[position],position)
+                itemSelectedListener(serviceDetail,position)
             }
         }
     }

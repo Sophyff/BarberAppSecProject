@@ -31,10 +31,15 @@ data class Services(
 )
 
 data class Beardstyle(
+    @SerializedName("cost")
     val cost: String,
+    @SerializedName("duration")
     val duration: String,
+    @SerializedName("serviceId")
     val serviceId: String,
+    @SerializedName("serviceName")
     val serviceName: String,
+    @SerializedName("servicePic")
     val servicePic: String
 )
 
@@ -55,10 +60,15 @@ data class Haircolor(
 )
 
 data class Haircut(
+    @SerializedName("cost")
     val cost: String,
+    @SerializedName("duration")
     val duration: String,
+    @SerializedName("serviceId")
     val serviceId: String,
+    @SerializedName("serviceName")
     val serviceName: String,
+    @SerializedName("servicePic")
     val servicePic: String
 )
 
